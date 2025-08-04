@@ -1,0 +1,63 @@
+<!-- thank-you.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You – RefactIQ</title>
+  <meta name="robots" content="noindex" />
+  <link rel="stylesheet" href="css/site.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="container" style="text-align:center; padding-top:4rem; padding-bottom:4rem;">
+    <img src="images/refactiq-logo-light.svg" alt="RefactIQ Logo" class="logo" data-aos="fade-down" />
+    
+    <h1 data-aos="fade-up" data-aos-delay="100">You're in. <i class="fas fa-circle-check icon-confirm"></i></h1>
+    
+    <p class="subtext" data-aos="fade-up" data-aos-delay="200" style="max-width: 480px; margin: 1rem auto 2rem;">
+      You’re on the list. We’ll ping you when RefactIQ goes live — maybe one heads-up before then.
+    </p>
+
+    <p class="builder-credit" data-aos="fade-up" data-aos-delay="300">
+      Built by a dev who’s cleaned up more messes than he cares to admit.
+    </p>
+
+    <div class="share-box" data-aos="fade-up" data-aos-delay="500">
+    <p class="share-prompt">Know a dev who needs this?</p>
+
+    <div class="share-quote" id="shareText">
+        I just joined RefactIQ early access — AI-powered<br />
+        code reviews that actually find what’s breaking your code.<br />
+        🧠 refactiq.com
+    </div>
+
+    <button class="copy-button" onclick="copyShareText()">Copy to clipboard</button>
+    </div>
+
+    
+    <a href="index.html" class="cta-form button-link" data-aos="fade-up" data-aos-delay="400" style="display:inline-block; margin-top:2rem; color: #1a73e8;">
+      ← Back to home
+    </a>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+    document.addEventListener("DOMContentLoaded", function () {
+      AOS.init();
+    });
+
+    function copyShareText() {
+        const text = document.getElementById("shareText").innerText;
+        navigator.clipboard.writeText(text).then(() => {
+            const btn = document.querySelector(".copy-button");
+            btn.textContent = "Copied!";
+            setTimeout(() => btn.textContent = "Copy to clipboard", 1800);
+        });
+    }
+  </script>
+</body>
+</html>

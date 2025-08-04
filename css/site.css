@@ -1,0 +1,374 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  background-color: #fff;
+  color: #222;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1rem 1rem;
+}
+
+.main-body {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: block;
+  max-width: 280px;
+  margin: 0 auto 1.5rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.subtext {
+  text-align: center;
+  font-size: 1rem;
+  margin: 0.5rem 0 0.25rem;
+}
+
+.subtext a {
+  color: #2155f5;
+  text-decoration: none;
+}
+
+.builder-credit {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1.75rem;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.cta input {
+  padding: 0.75rem 1rem;
+  border: 2px solid #111;
+  border-radius: 2rem;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 440px;
+}
+
+.cta-button {
+  background: linear-gradient(to right, #1a73e8, #1558cc);
+  box-shadow: 0 2px 8px rgba(21, 88, 204, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.cta-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(21, 88, 204, 0.25);
+}
+
+.founder-quote {
+  display: flex;
+  align-items: center;
+  margin: 2.5rem 0 2rem;
+  gap: 1rem;
+}
+
+.founder-photo.shadow {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+.founder-quote p.quote {
+  font-size: 0.9rem;
+  color: #333;
+  margin: 0;
+}
+
+.founder-quote .signature {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+.founder-quote img + div {
+  flex: 1;
+}
+
+.audit-box {
+  background: #ffffff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  padding: 1.75rem 2rem;
+  margin: 2.5rem auto 2rem;
+  text-align: left;
+}
+
+.audit-box h2 {
+  font-size: 1rem;
+  margin-bottom: 1.25rem;
+  color: #333;
+}
+
+.audit-box h2 .subtitle-note {
+  color: #2155f5;
+  font-weight: 500;
+  font-size: 0.95rem;
+  margin-left: 0.25rem;
+}
+
+.audit-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 2rem;
+  margin-top: 1rem;
+}
+
+.audit-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.audit-box li {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.audit-box .audit-title {
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .audit-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .founder-quote {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+footer {
+  text-align: center;
+  font-size: 0.75rem;
+  color: #888;
+  margin-top: 3rem;
+}
+
+footer .copyright {
+  margin-top: 0.5rem;
+  font-size: 0.7rem;
+}
+
+.micro-label {
+  font-size: 0.875rem;
+  color: #777;
+  margin-bottom: 0.25rem;
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.hero-visual {
+  max-width: 480px;
+  width: 100%;
+  margin: 2rem auto 3rem auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0 3rem;
+  flex-wrap: wrap;
+}
+
+.hero-image img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+.hero-content {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+}
+
+.hero-content h1 {
+  text-align: left;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.hero-content .subtext {
+  text-align: left;
+  font-size: 1rem;
+  margin: 0.5rem 0 0.25rem;
+}
+
+.hero-content .builder-credit {
+  text-align: left;
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1.75rem;
+}
+
+.hero-content .cta {
+  align-items: flex-start;
+}
+
+.cta-form {
+  display: block;
+  width: 100%;
+  max-width: 440px;
+  margin-bottom: 0.5rem;
+}
+
+.cta-form input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 2px solid #111;
+  border-radius: 2rem;
+  font-size: 1rem;
+}
+
+.cta-form button {
+  padding: 0.75rem 1.25rem;
+  background-color: #1a73e8;
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.cta-inputs {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: stretch;
+  width: 100%;
+}
+
+.cta-form button:hover {
+  background-color: #103be0;
+}
+
+@media (max-width: 640px) {
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-content h1,
+  .hero-content .subtext,
+  .hero-content .builder-credit {
+    text-align: center;
+  }
+
+  .hero-content .cta {
+    align-items: center;
+  }
+
+    .cta-inputs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-inputs input,
+  .cta-inputs button {
+    width: 100%;
+  }
+
+}
+
+[data-aos] {
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+.share-box {
+  background: #f9f9f9; /* soft neutral, not purple */
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  margin: 2.5rem auto 2rem;
+  max-width: 540px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+
+.share-prompt {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.share-quote {
+  background-color: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-family: monospace;
+  font-size: 0.9rem;
+  color: #333;
+  line-height: 1.35;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+  white-space: pre-line;
+  overflow-wrap: break-word;
+}
+
+.copy-button {
+  background-color: #111;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.25rem;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.copy-button:hover {
+  background-color: #000;
+}
+
+.icon-bullet {
+  color: #2155f5;
+  margin-right: 0.5rem;
+  width: 1.25rem;
+  text-align: center;
+}
+
+.icon-confirm {
+  color: #2155f5;
+  margin-right: 0.5rem;
+}
