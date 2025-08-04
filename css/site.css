@@ -201,18 +201,19 @@ footer .copyright {
 .hero-section {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center; /* center everything */
   gap: 2rem;
   margin: 2rem 0 3rem;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   max-width: 100%;
-  overflow: hidden;
   padding: 0 1rem;
 }
 
 .hero-image {
-  flex: 1;
-  max-width: 480px;
+  flex: 1 1 480px;
+  display: flex;
+  justify-content: center;
+  max-width: 448px;
 }
 
 .hero-image img {
@@ -220,7 +221,10 @@ footer .copyright {
   height: auto;
   display: block;
   border-radius: 12px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+
+  /* Shadow on right and bottom only using inset trick */
+  box-shadow:
+    6px 6px 20px rgba(0, 0, 0, 0.2); /* bottom-right */
 }
 
 .hero-content {

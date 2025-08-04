@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>RefactIQ – Find What's Breaking Your Code, Before Your Users Do</title>
     <meta name="description" content="RefactIQ is an AI-powered code audit tool for solo devs and indie hackers. Catch architecture leaks, dead logic, async bugs, and brittle zones — fast.">
 
@@ -25,111 +25,109 @@
     <!-- Canonical -->
     <link rel="canonical" href="https://refactiq.com">
     <link rel="icon" type="image/png" href="favicon.png" />
-  <link rel="stylesheet" href="css/site.css" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-  <div class="container">
-    <!-- <img src="images/refactiq-logo-light.svg" alt="RefactIQ Logo" class="logo" data-aos="fade-up" /> -->
+    <link rel="stylesheet" href="css/site.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="hero-section" data-aos="fade-up" data-aos-delay="50">
+        <div class="hero-image">
+          <img src="images/refactiq-hero.png" alt="RefactIQ preview" />
+        </div>
 
-    <div class="hero-section" data-aos="fade-up" data-aos-delay="50">
-    <div class="hero-image">
-        <img src="images/refactiq-hero.png" alt="RefactIQ preview" />
-    </div>
+        <div class="hero-content">
+          <h1>Find what's breaking your code - before your users do.</h1>
 
-    <div class="hero-content">
-        <h1>Find what's breaking your code - before your users do.</h1>
+          <p class="subtext">
+            <a href="#">RefactIQ scans your codebase for brittle zones, dead logic, async bugs, and more - fast.</a>
+          </p>
 
-        <p class="subtext">
-        <a href="#">RefactIQ scans your codebase for brittle zones, dead logic, async bugs, and more - fast.</a>
-        </p>
-
-        <p class="builder-credit">
+          <p class="builder-credit">
             Built by a dev with 30+ years of scars and wisdom - so you don’t have to learn it the hard way.
-        </p>
+          </p>
 
-        <form class="cta-form" action="https://formspree.io/f/movlkaaj" method="POST">
+          <form class="cta-form" action="https://formspree.io/f/movlkaaj" method="POST">
             <p class="micro-label">No spam. Just early access.</p>
             <div class="cta-inputs">
-                <input type="email" id="emailInput" name="email" placeholder="Enter your email, then →" required />
-                <button type="submit" id="ctaBtn">Get early access</button>
+              <input type="email" id="emailInput" name="email" placeholder="Enter your email, then →" required />
+              <button type="submit" id="ctaBtn">Get early access</button>
             </div>
-        </form>
+          </form>
 
-        <p class="scarcity-note" data-aos="fade-up" data-aos-delay="450">
-        🔥 <strong>First 100 devs</strong> get free early access and a full personalized code scan.
-        <span style="color:#e53935;">Don’t miss your spot.</span>
-        </p>
-    </div>
-    </div>
+          <p class="scarcity-note" data-aos="fade-up" data-aos-delay="450">
+            🔥 <strong>First 100 devs</strong> get free early access and a full personalized code scan.
+            <span style="color:#e53935;">Don’t miss your spot.</span>
+          </p>
+        </div>
+      </div>
 
-    <div class="main-body">
+      <div class="main-body">
         <div class="founder-quote" data-aos="fade-up" data-aos-delay="500">
-        <img src="images/headshot.jpeg" alt="Founder Headshot" class="founder-photo shadow" />
+          <img src="images/headshot.jpeg" alt="Founder Headshot" class="founder-photo shadow" />
         <div>
-            <p class="quote-label"><strong>Why I built RefactIQ</strong></p>
-            <p class="quote">
-            <em>“Most vibe coded projects die at 80%. Not because the idea is bad, the code is. RefactIQ finds the rot. With receipts.”</em>
-            </p>
-            <p class="signature">— John Hedley, 30+ years in the trenches</p>
-        </div>
-        </div>
-
-        <div class="audit-box" data-aos="fade-up" data-aos-delay="600">
-        <h2>What We’ll Help You Catch <span class="subtitle-note">(Right from Your First Deep Dive)</span></h2>
-        <div class="audit-columns">
-            <ul data-aos="fade-right" data-aos-delay="700">
-            <li><i class="fas fa-layer-group icon-bullet"></i> <span class="audit-title">Architecture Leaks</span> – Spot brittle zones early.</li>
-            <li><i class="fas fa-skull icon-bullet"></i> <span class="audit-title">Dead Code</span> – Kill abandoned logic.</li>
-            <li><i class="fas fa-signature icon-bullet"></i> <span class="audit-title">Naming Crimes</span> – Clarify what you really meant.</li>
-            </ul>
-            <ul data-aos="fade-left" data-aos-delay="700">
-            <li><i class="fas fa-rotate icon-bullet"></i> <span class="audit-title">Async/Await Mistakes</span> – Catch bugs before they bite.</li>
-            <li><i class="fas fa-shield-halved icon-bullet"></i> <span class="audit-title">Security Footguns</span> – End hardcoded secrets + risky patterns.</li>
-            <li><i class="fas fa-wand-magic-sparkles icon-bullet"></i> <span class="audit-title">And more</span> – Based on real-world bugs + years of cleanup.</li>
-            </ul>
-        </div>
-        </div>
-
-        <div class="why-it-matters" data-aos="fade-up" data-aos-delay="800">
-            <h2>Why RefactIQ Exists</h2>
-            <p><b>Most indie devs ship features fast</b> - but don’t know where their codebase is bleeding.</p>
-            <p><b>Buggy code hides in plain sight.</b> Tests don’t catch everything. Reviews miss the patterns. RefactIQ brings a second set of eyes - trained on the stuff that slips through.</p>
-            <p><b>The cost of cleanup keeps growing.</b> Tech debt compounds silently. What’s a 10-minute fix today becomes a full rewrite tomorrow. RefactIQ finds the rot before it festers.</p>
-        </div>
-
-        <div class="early-believers" data-aos="fade-up" data-aos-delay="850">
-        <h2>Who This Is For</h2>
-        <ul>
-            <li><i class="fas fa-user-gear icon-bullet"></i> Solo devs tired of staring at their own code and hoping it holds.</li>
-            <li><i class="fas fa-rocket icon-bullet"></i> Indie hackers who ship fast but want clean, scalable foundations.</li>
-            <li><i class="fas fa-brain icon-bullet"></i> Veterans who’ve seen vibe-coded disasters one too many times.</li>
-        </ul>
-        <p>We’re not for everyone — just builders who want to ship smarter, not sloppier.</p>
-        </div>
-
-        <footer>
-        <p>We’ll never spam you. You’ll hear from us at launch, and maybe once before.<br>We don’t sell or share emails - ever.</p>
-        <p class="copyright">© 2025 RefactIQ. All rights reserved.</p>
-        </footer>
+        <p class="quote-label"><strong>Why I built RefactIQ</strong></p>
+        <p class="quote">
+          <em>“Most vibe coded projects die at 80%. Not because the idea is bad, the code is. RefactIQ finds the rot. With receipts.”</em>
+        </p>
+        <p class="signature">— John Hedley, 30+ years in the trenches</p>
+      </div>
     </div>
+
+    <div class="audit-box" data-aos="fade-up" data-aos-delay="600">
+      <h2>What We’ll Help You Catch <span class="subtitle-note">(Right from Your First Deep Dive)</span></h2>
+      <div class="audit-columns">
+        <ul data-aos="fade-right" data-aos-delay="700">
+          <li><i class="fas fa-layer-group icon-bullet"></i> <span class="audit-title">Architecture Leaks</span> – Spot brittle zones early.</li>
+          <li><i class="fas fa-skull icon-bullet"></i> <span class="audit-title">Dead Code</span> – Kill abandoned logic.</li>
+          <li><i class="fas fa-signature icon-bullet"></i> <span class="audit-title">Naming Crimes</span> – Clarify what you really meant.</li>
+        </ul>
+        <ul data-aos="fade-left" data-aos-delay="700">
+          <li><i class="fas fa-rotate icon-bullet"></i> <span class="audit-title">Async/Await Mistakes</span> – Catch bugs before they bite.</li>
+          <li><i class="fas fa-shield-halved icon-bullet"></i> <span class="audit-title">Security Footguns</span> – End hardcoded secrets + risky patterns.</li>
+          <li><i class="fas fa-wand-magic-sparkles icon-bullet"></i> <span class="audit-title">And more</span> – Based on real-world bugs + years of cleanup.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="why-it-matters" data-aos="fade-up" data-aos-delay="800">
+      <h2>Why RefactIQ Exists</h2>
+      <p><b>Most indie devs ship features fast</b> - but don’t know where their codebase is bleeding.</p>
+      <p><b>Buggy code hides in plain sight.</b> Tests don’t catch everything. Reviews miss the patterns. RefactIQ brings a second set of eyes - trained on the stuff that slips through.</p>
+      <p><b>The cost of cleanup keeps growing.</b> Tech debt compounds silently. What’s a 10-minute fix today becomes a full rewrite tomorrow. RefactIQ finds the rot before it festers.</p>
+    </div>
+
+    <div class="early-believers" data-aos="fade-up" data-aos-delay="850">
+      <h2>Who This Is For</h2>
+      <ul>
+        <li><i class="fas fa-user-gear icon-bullet"></i> Solo devs tired of staring at their own code and hoping it holds.</li>
+        <li><i class="fas fa-rocket icon-bullet"></i> Indie hackers who ship fast but want clean, scalable foundations.</li>
+        <li><i class="fas fa-brain icon-bullet"></i> Veterans who’ve seen vibe-coded disasters one too many times.</li>
+      </ul>
+      <p>We’re not for everyone — just builders who want to ship smarter, not sloppier.</p>
+    </div>
+
+    <footer>
+      <p>We’ll never spam you. You’ll hear from us at launch, and maybe once before.<br>We don’t sell or share emails - ever.</p>
+      <p class="copyright">© 2025 RefactIQ. All rights reserved.</p>
+    </footer>
   </div>
+</div>
 
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
-  // Prevent browser from restoring scroll on reload
-  if ('scrollRestoration' in history) {
-    history.scrollRestoration = 'manual';
-  }
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      // Prevent browser from restoring scroll on reload
+      if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+      }
 
-  document.addEventListener("DOMContentLoaded", function () {
-    AOS.init();
-  });
+      document.addEventListener("DOMContentLoaded", function () {
+        AOS.init();
+      });
 
-  document.getElementById("ctaBtn").addEventListener("click", function () {
-    document.getElementById("emailInput").focus();
-  });
-</script>
-</body>
+      document.getElementById("ctaBtn").addEventListener("click", function () {
+        document.getElementById("emailInput").focus();
+      });
+    </script>
+  </body>
 </html>
