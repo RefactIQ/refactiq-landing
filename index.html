@@ -31,7 +31,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="hero-section" data-aos="fade-up" data-aos-delay="50">
+      <div class="hero-section">
         <div class="hero-image">
           <img src="images/refactiq-hero.png" alt="RefactIQ preview" />
         </div>
@@ -55,7 +55,7 @@
             </div>
           </form>
 
-          <p class="scarcity-note" data-aos="fade-up" data-aos-delay="450">
+          <p class="scarcity-note">
             🔥 <strong>First 100 devs</strong> get free early access and a full personalized code scan.
             <span style="color:#e53935;">Don’t miss your spot.</span>
           </p>
@@ -63,7 +63,7 @@
       </div>
 
       <div class="main-body">
-        <div class="founder-quote" data-aos="fade-up" data-aos-delay="500">
+        <div class="founder-quote">
           <img src="images/headshot.jpeg" alt="Founder Headshot" class="founder-photo shadow" />
         <div>
         <p class="quote-label"><strong>Why I built RefactIQ</strong></p>
@@ -74,15 +74,15 @@
       </div>
     </div>
 
-    <div class="audit-box" data-aos="fade-up" data-aos-delay="600">
+    <div class="audit-box">
       <h2>What We’ll Help You Catch <span class="subtitle-note">(Right from Your First Deep Dive)</span></h2>
       <div class="audit-columns">
-        <ul data-aos="fade-right" data-aos-delay="700">
+        <ul>
           <li><i class="fas fa-layer-group icon-bullet"></i> <span class="audit-title">Architecture Leaks</span> – Spot brittle zones early.</li>
           <li><i class="fas fa-skull icon-bullet"></i> <span class="audit-title">Dead Code</span> – Kill abandoned logic.</li>
           <li><i class="fas fa-signature icon-bullet"></i> <span class="audit-title">Naming Crimes</span> – Clarify what you really meant.</li>
         </ul>
-        <ul data-aos="fade-left" data-aos-delay="700">
+        <ul>
           <li><i class="fas fa-rotate icon-bullet"></i> <span class="audit-title">Async/Await Mistakes</span> – Catch bugs before they bite.</li>
           <li><i class="fas fa-shield-halved icon-bullet"></i> <span class="audit-title">Security Footguns</span> – End hardcoded secrets + risky patterns.</li>
           <li><i class="fas fa-wand-magic-sparkles icon-bullet"></i> <span class="audit-title">And more</span> – Based on real-world bugs + years of cleanup.</li>
@@ -90,14 +90,14 @@
       </div>
     </div>
 
-    <div class="why-it-matters" data-aos="fade-up" data-aos-delay="800">
+    <div class="why-it-matters">
       <h2>Why RefactIQ Exists</h2>
       <p><b>Most indie devs ship features fast</b> - but don’t know where their codebase is bleeding.</p>
       <p><b>Buggy code hides in plain sight.</b> Tests don’t catch everything. Reviews miss the patterns. RefactIQ brings a second set of eyes - trained on the stuff that slips through.</p>
       <p><b>The cost of cleanup keeps growing.</b> Tech debt compounds silently. What’s a 10-minute fix today becomes a full rewrite tomorrow. RefactIQ finds the rot before it festers.</p>
     </div>
 
-    <div class="early-believers" data-aos="fade-up" data-aos-delay="850">
+    <div class="early-believers">
       <h2>Who This Is For</h2>
       <ul>
         <li><i class="fas fa-user-gear icon-bullet"></i> Solo devs tired of staring at their own code and hoping it holds.</li>
@@ -114,20 +114,5 @@
   </div>
 </div>
 
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <script>
-      // Prevent browser from restoring scroll on reload
-      if ('scrollRestoration' in history) {
-        history.scrollRestoration = 'manual';
-      }
-
-      document.addEventListener("DOMContentLoaded", function () {
-        AOS.init();
-      });
-
-      document.getElementById("ctaBtn").addEventListener("click", function () {
-        document.getElementById("emailInput").focus();
-      });
-    </script>
   </body>
 </html>
