@@ -8,6 +8,7 @@ body {
   background-color: #fff;
   color: #222;
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 .container {
@@ -320,7 +321,7 @@ footer .copyright {
   border-radius: 12px;
   padding: 1.5rem;
   text-align: center;
-  margin: 2.5rem auto 2rem;
+  margin: 2rem auto 1.5rem;
   max-width: 540px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
 }
