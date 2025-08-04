@@ -198,30 +198,24 @@ footer .copyright {
   padding-left: 1rem;
 }
 
-.hero-visual {
-  max-width: 480px;
-  width: 100%;
-  margin: 2rem auto 3rem auto;
-  display: block;
-  border-radius: 12px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
-}
-
 .hero-section {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 2rem;
   margin: 2rem 0 3rem;
-  flex-wrap: wrap;
-  width: 100%;
+  flex-wrap: nowrap;
   max-width: 100%;
-  box-sizing: border-box;
-  overflow-x: hidden;
+  overflow: hidden;
+  padding: 0 1rem;
+}
+
+.hero-image {
+  flex: 1;
+  max-width: 480px;
 }
 
 .hero-image img {
-  max-width: 100%;
   width: 100%;
   height: auto;
   display: block;
@@ -230,9 +224,9 @@ footer .copyright {
 }
 
 .hero-content {
-  flex: 1;
-  min-width: 300px;
-  max-width: 400px;
+ flex: 1;
+  max-width: 480px;
+  min-width: 320px;
 }
 
 .hero-content h1 {
@@ -307,7 +301,7 @@ footer .copyright {
     align-items: center;
   }
 
-    .cta-inputs {
+  .cta-inputs {
     flex-direction: column;
     align-items: center;
   }
