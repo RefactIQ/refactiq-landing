@@ -379,3 +379,13 @@ footer .copyright {
   color: #2155f5;
   margin-right: 0.5rem;
 }
+
+input[type="email"] {
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
