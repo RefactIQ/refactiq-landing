@@ -167,17 +167,6 @@ h1 {
   font-weight: 600;
 }
 
-@media (max-width: 640px) {
-  .audit-columns {
-    grid-template-columns: 1fr;
-  }
-
-  .founder-quote {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
 footer {
   text-align: center;
   font-size: 0.75rem;
@@ -203,7 +192,7 @@ footer .copyright {
   align-items: center;
   justify-content: center; /* center everything */
   gap: 2rem;
-  margin: 2rem 0 3rem;
+  margin: 2rem 0 2rem;
   flex-wrap: wrap;
   max-width: 100%;
   padding: 0 1rem;
@@ -221,11 +210,8 @@ footer .copyright {
   height: auto;
   display: block;
   border-radius: 12px;
-
-  /* Shadow on right and bottom only using inset trick */
-  box-shadow:
-    6px 6px 20px rgba(0, 0, 0, 0.2); /* bottom-right */
-  aspect-ratio: 1 / 1.14;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* softer, even shadow */
+  margin-bottom: 1rem; /* mobile spacing control */
 }
 
 .hero-content {
@@ -287,35 +273,6 @@ footer .copyright {
 
 .cta-form button:hover {
   background-color: #103be0;
-}
-
-@media (max-width: 640px) {
-  .hero-section {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .hero-content h1,
-  .hero-content .subtext,
-  .hero-content .builder-credit {
-    text-align: center;
-  }
-
-  .hero-content .cta {
-    align-items: center;
-  }
-
-  .cta-inputs {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .cta-inputs input,
-  .cta-inputs button {
-    width: 100%;
-  }
-
 }
 
 [data-aos] {
@@ -403,12 +360,59 @@ input[type="email"] {
     overflow-x: hidden !important;
     max-width: 100vw;
   }
-}
 
-@media (max-width: 640px) {
+  .audit-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .founder-quote {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-content h1,
+  .hero-content .subtext,
+  .hero-content .builder-credit {
+    text-align: center;
+  }
+
+  .hero-content .cta {
+    align-items: center;
+  }
+
+  .cta-inputs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-inputs input,
+  .cta-inputs button {
+    width: 100%;
+  }
+
+  .hero-image {
+    display: block;
+    flex: none !important;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto 0.5rem; /* top, right, bottom, left — clean and tight */
+    padding: 0;
+    line-height: 0;       /* kills whitespace caused by inline spacing in some renderers */
+  }
+
   .hero-image img {
     max-height: 320px;
     object-fit: contain;
-    aspect-ratio: unset; /* remove forced aspect ratio on small screens */
+    margin-bottom: 0;
+  }
+
+  .hero-content h1 {
+    margin-top: 0.25rem; /* or 0 if you want zero spacing */
   }
 }
