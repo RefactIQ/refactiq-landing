@@ -179,22 +179,24 @@
 
 <!-- 🔧 FAQ Script -->
 <script>
-  const questions = document.querySelectorAll(".faq-question");
+  document.addEventListener("DOMContentLoaded", function () {
+    const questions = document.querySelectorAll(".faq-question");
 
-  questions.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const answer = btn.nextElementSibling;
-      const isOpen = btn.classList.contains("active");
+    questions.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const answer = btn.nextElementSibling;
+        const isOpen = btn.classList.contains("active");
 
-      questions.forEach(q => {
-        q.classList.remove("active");
-        q.nextElementSibling.classList.remove("show");
+        questions.forEach(q => {
+          q.classList.remove("active");
+          q.nextElementSibling.classList.remove("show");
+        });
+
+        if (!isOpen) {
+          btn.classList.add("active");
+          answer.classList.add("show");
+        }
       });
-
-      if (!isOpen) {
-        btn.classList.add("active");
-        answer.classList.add("show");
-      }
     });
   });
 </script>
