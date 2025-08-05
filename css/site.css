@@ -284,7 +284,7 @@ footer .copyright {
 .share-box {
   background: #f9f9f9; /* soft neutral, not purple */
   border-radius: 12px;
-  padding: 1.5rem;
+  padding: 5px;
   text-align: center;
   margin: 2rem auto 1.5rem;
   max-width: 540px;
@@ -300,12 +300,13 @@ footer .copyright {
 
 .share-quote {
   background-color: #fff;
-  padding: 0.6rem 1rem;
+  padding: 0 10px 10px 10px;
   border-radius: 8px;
   font-family: monospace;
   font-size: 0.9rem;
   color: #333;
-  line-height: 1.35;
+  line-height: 1;
+  text-align: left;
   border: 1px solid #ddd;
   margin-bottom: 1rem;
   white-space: pre-line;
