@@ -367,30 +367,34 @@ input[type="email"] {
     border-bottom: 1px solid #ddd;
   }
 
-  .faq-question {
-    background: none;
-    border: none;
-    width: 100%;
-    text-align: left;
-    font-size: 1.1rem;
-    font-weight: 500;
-    padding: 1rem;
-    cursor: pointer;
-    outline: none;
-    position: relative;
-  }
+.faq-question {
+  background: none;
+  border: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 1rem 1rem 1rem 0;
+  cursor: pointer;
+  outline: none;
+  text-align: left;
+  color: #007aff; /* Matches mobile Safari's blue link color, tweak if needed */
+}
 
-  .faq-question::after {
-    content: "+";
-    position: absolute;
-    right: 1rem;
-    font-size: 1.25rem;
-    transition: transform 0.3s ease;
-  }
+.faq-question::after {
+  content: "+";
+  flex-shrink: 0;
+  font-size: 1.25rem;
+  transition: transform 0.3s ease;
+  color: #007aff;
+}
 
-  .faq-question.active::after {
-    content: "–";
-  }
+.faq-question.active::after {
+  content: "–";
+}
 
   .faq-answer {
     display: none;
