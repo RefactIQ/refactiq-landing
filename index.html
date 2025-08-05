@@ -19,7 +19,7 @@
     <meta name="twitter:description" content="AI-powered code scans for solo developers. Catch bugs, leaks, and brittle logic.">
     <meta name="twitter:image" content="https://refactiq.com/images/refactiq-og.png">
 
-    <!-- Keywords (optional but tuned for your audience) -->
+    <!-- Keywords -->
     <meta name="keywords" content="AI code audit, code quality tool, architecture bugs, async issues, code smell detector, solo developer tools, indie hacker dev tool, developer code health scan">
 
     <!-- Canonical -->
@@ -107,6 +107,69 @@
       <p>We’re not for everyone — just builders who want to ship smarter, not sloppier.</p>
     </div>
 
+    <!-- 🔥 FAQ SECTION INSERTED HERE -->
+    <div class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <button class="faq-question">What languages is this good for?</button>
+        <div class="faq-answer">
+          RefactIQ works with all major programming languages - including JavaScript, Python, TypeScript, C#, Java, Go, and more.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">How much will this cost?</button>
+        <div class="faq-answer">
+          <ul>
+            <li><strong>Free sample audit:</strong> One audit, no signup, no catch. Just proof it works.</li>
+            <li><strong>Solo devs – $19/month:</strong> Unlimited audits on your own projects - including full audit history and side-by-side comparisons.</li>
+            <li><strong>Teams & startups – $59/month:</strong> Multiple repos, shared access, and a dashboard to track how your code quality improves over time.</li>
+          </ul>
+          <p>No confusing tiers. No per-seat nonsense. Just scalable code reviews that don’t miss the rot.</p>
+          <p><em>Pricing may evolve as we grow - but the value’s already here.</em></p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">How do I send you my code?</button>
+        <div class="faq-answer">
+          <ul>
+            <li><strong>GitHub repo:</strong> Paste a public GitHub URL - we’ll securely clone it, prep it for audit, and delete the copy right after. You’ll be able to exclude folders before we run anything. Fast, clean, and gone.</li>
+            <li><strong>Desktop code packager:</strong> Working locally? Use our lightweight tool to scan your project and send us just the files we need. You control exactly what we see - include or exclude whatever you want. The more context we have, the sharper the audit. But it’s totally your call.</li>
+            <li><strong>Code snippet:</strong> Just want feedback on one gnarly method? Paste it in for a quick hit audit - perfect for red flags and “is this as bad as I think it is?” moments.</li>
+          </ul>
+          <p>All audits run on our secure server - not your machine. And no matter how you send your code, we only keep what we need to generate your results. Then we forget it.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">What do you do with my code after you review it?</button>
+        <div class="faq-answer">
+          <p>Your code is never stored - full stop. Whether you send it via GitHub or our desktop packager, it’s used solely to generate your audit.</p>
+
+          <p>Once that’s done, we delete the raw code automatically. What remains is your audit report - structured findings, not your source code. You control what gets uploaded, and nothing sticks around that you didn’t explicitly send.</p>
+
+          <p>No backups. No shadow copies. No surprises. Just clean audits and full control - always.</p>
+          <p>I'm a developer too, so I totally get it.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Can I try it without signing up?</button>
+        <div class="faq-answer">
+          <p>Yes - your first audit is totally free, no account required. Just paste a repo and feel it for yourself. It’s our way of showing, not selling.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">What will I actually get from an audit?</button>
+        <div class="faq-answer">
+          <p>Each audit is powered by a custom-tuned LLM with architectural awareness and consistency checks built in. It’s not magic, it’s method. We built it to catch what linters miss and code reviewers overlook - so you can find brittle zones, kill dead logic, and tighten your architecture before it costs you.</p>
+        </div>
+      </div>
+    </div>
+
     <footer>
       <p>We’ll never spam you. You’ll hear from us at launch, and maybe once before.<br>We don’t sell or share emails - ever.</p>
       <p class="copyright">© 2025 RefactIQ. All rights reserved.</p>
@@ -114,5 +177,24 @@
   </div>
 </div>
 
-  </body>
-</html>
+<!-- 🔧 FAQ Script -->
+<script>
+  const questions = document.querySelectorAll(".faq-question");
+
+  questions.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const answer = btn.nextElementSibling;
+      const isOpen = btn.classList.contains("active");
+
+      questions.forEach(q => {
+        q.classList.remove("active");
+        q.nextElementSibling.classList.remove("show");
+      });
+
+      if (!isOpen) {
+        btn.classList.add("active");
+        answer.classList.add("show");
+      }
+    });
+  });
+</script>
